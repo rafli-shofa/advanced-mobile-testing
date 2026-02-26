@@ -1,7 +1,6 @@
 import { APIDemosActions } from "../actions/TextEntryDialog.action";
 
-const apiDemosAction = new APIDemosActions();
-let fillText: string;
+const apiDemosAction = new APIDemosActions(); let fillText: string;
 
 describe("ApiDemos - Text Entry Dialog (Advanced)", async () => {
     before(async function() {
@@ -27,8 +26,8 @@ describe("ApiDemos - Text Entry Dialog (Advanced)", async () => {
     it("@TC001 - First Scenario", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField(fillText);
         await apiDemosAction.fillPasswordField(fillText);
 
@@ -41,8 +40,8 @@ describe("ApiDemos - Text Entry Dialog (Advanced)", async () => {
     it("@TC002 - Second Scenario", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField(fillText);
         await apiDemosAction.fillPasswordField(fillText);
 
@@ -55,8 +54,8 @@ describe("ApiDemos - Text Entry Dialog (Advanced)", async () => {
     it("@TC003 - Third Scenario", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField(fillText);
         await apiDemosAction.fillPasswordField(fillText);
 

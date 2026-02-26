@@ -20,8 +20,8 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
     it("@TC 001 - Valid Data (Password numbers)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField("John Doe");
         await apiDemosAction.fillPasswordField("123456");
 
@@ -34,8 +34,8 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
     it("@TC 002 - Valid Data (Password texts)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField("John Doe");
         await apiDemosAction.fillPasswordField("johndoe");
 
@@ -48,8 +48,8 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
     it("@TC 003 - Valid Data (Password mix)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField("John Doe");
         await apiDemosAction.fillPasswordField("John123@");
 
@@ -62,8 +62,8 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
     it("@TC 004 - Invalid Data (Password empty)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField("John Doe");
         await apiDemosAction.fillPasswordField("");
 
@@ -77,8 +77,8 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
     it("@TC 005 - Invalid Data (Name empty)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField("");
         await apiDemosAction.fillPasswordField("123456");
 
@@ -91,8 +91,8 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
     it("@TC 006 - Invalid Data (Name and Password empty)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
-        await apiDemosAction.ClickAlertDialogsBtn();
-        await apiDemosAction.ClickTextEntryDialogBtn();
+        await apiDemosAction.clickAlertDialogsBtn();
+        await apiDemosAction.clickTextEntryDialogBtn();
         await apiDemosAction.fillNameField("");
         await apiDemosAction.fillPasswordField("");
 

@@ -1,3 +1,4 @@
+// TextEntryDialog.action.ts
 import { APIDemosPage } from "../pageobjects/TextEntryPage.page";
 
 export class APIDemosActions {
@@ -9,21 +10,14 @@ export class APIDemosActions {
         await APIDemosPage.appBtn().click();
     }
 
-    async verifyAppBtn() {
-        return await APIDemosPage.appBtn().isDisplayed();
-    }
-
-    async ClickAlertDialogsBtn() {
+    async clickAlertDialogsBtn() {
         await APIDemosPage.alertDialogsBtn().click();
     }
 
-    async ClickTextEntryDialogBtn() {
-        const textEntryDialogBtn = $(
-        'android=new UiScrollable(new UiSelector().scrollable(true))' +
-        '.scrollIntoView(new UiSelector().resourceId("io.appium.android.apis:id/text_entry_button"))'
-        );
-        await textEntryDialogBtn.waitForDisplayed({ timeout: 5000 });
-        await textEntryDialogBtn.click();
+    async clickTextEntryDialogBtn() {
+        const btn = APIDemosPage.textEntryDialogBtn();
+        await btn.waitForDisplayed({ timeout: 5000 });
+        await btn.click();
     }
 
     async fillNameField(query: string) {
@@ -34,7 +28,7 @@ export class APIDemosActions {
         await APIDemosPage.passwordField().setValue(query);
     }
 
-    async getNameFieldValue() {
+    async getNameFieldValue(): Promise<string> {
         return await APIDemosPage.nameField().getText();
     }
 
