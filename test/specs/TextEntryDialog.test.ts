@@ -45,7 +45,7 @@ describe("ApiDemos - Text Entry Dialog (Manual)", () => {
         await apiDemosAction.clickOkBtn();
     });
 
-    it("@TC 003 - Valid Data (Password mix)", async () => {
+    it("@TC 003 - Valid Data (Password: combination)", async () => {
         await apiDemosAction.waitForAppBtn();
         await apiDemosAction.clickAppBtn();
         await apiDemosAction.clickAlertDialogsBtn();
